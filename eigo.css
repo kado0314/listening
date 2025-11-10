@@ -1,4 +1,4 @@
-<style>
+/* style.css */
 :root {
   --bg-dark: #0a0f24;
   --bg-card: rgba(20, 30, 60, 0.9);
@@ -156,4 +156,3 @@ button:hover::before {
   button { width: 100%; padding: 12px; font-size: 0.95rem; }
   .correct-text { font-size: 0.95rem; padding: 12px; }
 }
-</style>
