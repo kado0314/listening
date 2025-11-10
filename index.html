@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>リスニング＆復唱チェック</title>
+    <style>
+        /* ここにCSSを記述するか、外部ファイル(style.css)を読み込みます */
+        body { font-family: sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+        button { padding: 10px 20px; margin: 5px; cursor: pointer; }
+        .result-box { margin-top: 20px; padding: 15px; border: 1px solid #ccc; }
+        .correct-text { background-color: #e9f5ff; padding: 10px; border-radius: 5px; }
+    </style>
+</head>
+<body>
+    <h1>🎤 復唱チャレンジ</h1>
+
+    <p>以下の英文を聞いて、再生後に「録音開始」ボタンを押して復唱してください。</p>
+
+    <h2>正解英文 (ターゲットフレーズ)</h2>
+    <div class="correct-text" id="targetSentence">The quick brown fox jumps over the lazy dog.</div>
+    <button id="playButton">🔊 英文再生</button>
+
+    <hr>
+
+    <h2>あなたの復唱</h2>
+    <button id="recordButton">🎙️ 録音開始</button>
+    <div class="result-box">
+        <p><strong>認識結果:</strong> <span id="recognitionResult">---</span></p>
+        <p><strong>スコア:</strong> <span id="scoreResult">0%</span></p>
+        <p>（認識された単語の一致度）</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
