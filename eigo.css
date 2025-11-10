@@ -1,3 +1,4 @@
+/* ===== ルート変数 ===== */
 :root {
   --bg-dark: #0a0f24;
   --bg-card: rgba(20, 30, 60, 0.9);
@@ -37,14 +38,17 @@ body {
 h1 {
   font-size: 2rem;
   margin-bottom: 1em;
+  background: linear-gradient(90deg, #00b4ff, #60a3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ===== 説明文 ===== */
 p {
   font-size: 1rem;
   color: var(--text-sub);
-  line-height: 1.6;
-  margin-bottom: 1em;
+  line-height: 1.5;
+  margin-bottom: 1.2em;
 }
 
 /* ===== 正解英文 ===== */
@@ -57,10 +61,9 @@ p {
   margin-bottom: 15px;
   text-align: left;
   color: var(--text-main);
-  word-break: break-word;
 }
 
-/* ===== ボタン ===== */
+/* ===== ボタン共通 ===== */
 button {
   border: none;
   border-radius: var(--radius);
@@ -73,15 +76,15 @@ button {
   transition: transform 0.15s, box-shadow 0.3s;
 }
 
+/* ===== 各ボタンのカラー ===== */
 #playButton {
   background: linear-gradient(90deg, #0078ff, #00c3ff);
   color: white;
   box-shadow: 0 0 8px rgba(0,180,255,0.4);
 }
-
 #playButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 16px rgba(0,180,255,0.6);
+  box-shadow: 0 0 18px rgba(0,180,255,0.8);
   background: linear-gradient(90deg, #00c3ff, #0078ff);
 }
 
@@ -90,10 +93,9 @@ button {
   color: white;
   box-shadow: 0 0 8px rgba(255,180,0,0.4);
 }
-
 #recordButton:hover {
   transform: translateY(-2px);
-  box-shadow: 0 0 16px rgba(255,180,0,0.6);
+  box-shadow: 0 0 18px rgba(255,180,0,0.6);
   background: linear-gradient(90deg, #ffc200, #ff7a00);
 }
 
@@ -102,14 +104,13 @@ button {
   color: white;
   box-shadow: 0 0 8px #006644;
 }
-
 #changeButton:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 16px #00aa55;
   background: linear-gradient(90deg, #005533, #007744);
 }
 
-/* 波紋エフェクト */
+/* ===== 波紋エフェクト ===== */
 button::before {
   content: "";
   position: absolute;
@@ -154,7 +155,6 @@ button:hover::before {
   body { padding: 20px 10px; }
   .container { padding: 20px 15px; }
   h1 { font-size: 1.5rem; }
-  p { font-size: 0.95rem; }
   button { width: 100%; padding: 12px; font-size: 0.95rem; }
   .correct-text { font-size: 0.95rem; padding: 12px; }
 }
