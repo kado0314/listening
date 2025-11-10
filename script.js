@@ -25,7 +25,6 @@ const SENTENCE_LIST = [
     "Believe you can and you're halfway there.",
     "You only live once, but if you do it right, once is enough.",
     "In the end, it's not the years in your life that count, but the life in your years.",
-    
     "I would like to book a flight to London.",
     "Could you please tell me the way to the nearest station?",
     "We need to discuss the budget for the next quarter.",
@@ -36,7 +35,6 @@ const SENTENCE_LIST = [
     "What is your opinion on the new marketing strategy?",
     "Please confirm your attendance by the end of the day.",
     "I am running a little late, so please start without me.",
-    
     "The weather forecast says it will rain tomorrow.",
     "I had a fantastic dinner with my family last night.",
     "Did you watch the football game yesterday evening?",
@@ -47,7 +45,6 @@ const SENTENCE_LIST = [
     "She wore a beautiful dress to the party.",
     "I need to charge my phone before I leave.",
     "Could you help me carry these heavy boxes?",
-    
     "The early bird catches the worm.",
     "Practice makes perfect in every field.",
     "Never put off till tomorrow what you can do today.",
@@ -58,7 +55,6 @@ const SENTENCE_LIST = [
     "Every cloud has a silver lining.",
     "Honesty is the best policy for a good relationship.",
     "Time is money, so let's use it wisely.",
-    
     "Please let me know if you require any further assistance.",
     "We are looking for ways to improve efficiency.",
     "The meeting room is on the second floor.",
@@ -69,7 +65,6 @@ const SENTENCE_LIST = [
     "We must adhere to the company policy.",
     "How do we measure the success of this campaign?",
     "I will follow up with the team leader.",
-    
     "I feel much better after taking a short break.",
     "The traffic was terrible this morning.",
     "I spent the weekend relaxing at home.",
@@ -80,7 +75,6 @@ const SENTENCE_LIST = [
     "It's important to stay hydrated throughout the day.",
     "I learned how to bake bread yesterday.",
     "Could you repeat that sentence more slowly?",
-    
     "The company announced its annual results yesterday.",
     "We are currently developing a new software application.",
     "Investment in technology is crucial for growth.",
@@ -91,7 +85,6 @@ const SENTENCE_LIST = [
     "The CEO will give a presentation next week.",
     "We are optimistic about the future of this venture.",
     "Risk management is a top priority for us.",
-    
     "Could you explain the difference between these two products?",
     "I am interested in applying for the sales position.",
     "The training session starts at nine sharp.",
@@ -102,7 +95,6 @@ const SENTENCE_LIST = [
     "The budget proposal needs further adjustments.",
     "I need access to the shared drive.",
     "We appreciate your valuable feedback.",
-    
     "The sun is shining brightly today.",
     "I love walking my dog in the morning.",
     "The library opens at nine in the morning.",
@@ -113,7 +105,6 @@ const SENTENCE_LIST = [
     "It is important to maintain a balanced diet.",
     "I'm feeling hungry; let's get some lunch.",
     "Could we reschedule our appointment, please?",
-    
     "The committee will review all applications.",
     "We need to prioritize tasks effectively.",
     "Please ensure all data is accurate.",
