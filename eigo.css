@@ -1,12 +1,11 @@
 /* style.css */
 :root {
   --bg-dark: #0a0f24;
-  --bg-card: rgba(20, 30, 60, 0.9);
+  --bg-card: rgba(20, 30, 60, 0.95);
   --accent: #00b4ff;
-  --accent-glow: 0 0 12px #00b4ff;
   --text-main: #e6f0ff;
   --text-sub: #a0b8ff;
-  --radius: 18px;
+  --radius: 16px;
   font-family: "Noto Sans JP", "Poppins", sans-serif;
 }
 
@@ -20,41 +19,39 @@ body {
   justify-content: center;
 }
 
-/* ===== カード風コンテナ ===== */
+/* ===== カード ===== */
 .container {
   background: var(--bg-card);
-  backdrop-filter: blur(12px);
-  border: 1px solid rgba(0,180,255,0.3);
   border-radius: var(--radius);
-  box-shadow: var(--accent-glow);
-  max-width: 700px;
+  box-shadow: 0 8px 20px rgba(0,180,255,0.3);
   width: 100%;
-  padding: 30px 40px;
-  box-sizing: border-box;
+  max-width: 680px;
+  padding: 30px 30px;
   text-align: center;
 }
 
 /* ===== タイトル ===== */
 h1 {
-  font-size: 1.8rem;
-  margin-bottom: 1em;
+  font-size: 1.9rem;
+  margin-bottom: 0.8em;
 }
 
 /* ===== 説明文 ===== */
 p {
   font-size: 1rem;
   color: var(--text-sub);
-  line-height: 1.5;
+  line-height: 1.6;
+  margin-bottom: 1em;
 }
 
 /* ===== 正解英文 ===== */
 .correct-text {
-  background: rgba(0,180,255,0.1);
-  border-left: 5px solid var(--accent);
-  padding: 14px 16px;
+  background: rgba(0,180,255,0.08);
+  border-left: 4px solid var(--accent);
+  padding: 12px 14px;
   border-radius: var(--radius);
   font-weight: bold;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: left;
   color: var(--text-main);
 }
@@ -63,83 +60,54 @@ p {
 button {
   border: none;
   border-radius: var(--radius);
-  padding: 14px 30px;
-  margin: 5px;
+  padding: 12px 28px;
+  margin: 6px;
   font-size: 1rem;
   cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: transform 0.15s, box-shadow 0.3s;
+  transition: all 0.2s;
 }
 
 #playButton {
-  background: linear-gradient(90deg, #0078ff, #00c3ff);
+  background-color: var(--accent);
   color: white;
-  box-shadow: 0 0 8px rgba(0,180,255,0.4);
 }
 
 #playButton:hover {
+  box-shadow: 0 0 12px var(--accent);
   transform: translateY(-2px);
-  box-shadow: 0 0 16px rgba(0,180,255,0.6);
-  background: linear-gradient(90deg, #00c3ff, #0078ff);
 }
 
 #recordButton {
-  background: linear-gradient(90deg, #ff7a00, #ffc200);
+  background-color: #ff9c42;
   color: white;
-  box-shadow: 0 0 8px rgba(255,180,0,0.4);
 }
 
 #recordButton:hover {
+  box-shadow: 0 0 12px #ff9c42;
   transform: translateY(-2px);
-  box-shadow: 0 0 16px rgba(255,180,0,0.6);
-  background: linear-gradient(90deg, #ffc200, #ff7a00);
 }
 
 #changeButton {
-  background: linear-gradient(90deg, #006644, #004422);
+  background-color: #007744;
   color: white;
-  box-shadow: 0 0 8px #006644;
 }
 
 #changeButton:hover {
+  box-shadow: 0 0 12px #00aa55;
   transform: translateY(-2px);
-  box-shadow: 0 0 16px #00aa55;
-  background: linear-gradient(90deg, #005533, #007744);
-}
-
-/* 波紋エフェクト */
-button::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 300%;
-  height: 300%;
-  border-radius: 50%;
-  transform: translate(-50%, -50%) scale(0);
-  opacity: 0;
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out;
-  z-index: 0;
-}
-
-button:hover::before {
-  transform: translate(-50%, -50%) scale(1);
-  opacity: 0.1;
 }
 
 /* ===== 結果ボックス ===== */
 .result-box {
   margin-top: 20px;
   padding: 15px;
-  border: 1px solid rgba(0,180,255,0.3);
   border-radius: var(--radius);
   background: rgba(0,0,0,0.2);
   text-align: left;
 }
 
 .result-box p {
-  margin: 8px 0;
+  margin: 6px 0;
   color: var(--text-main);
 }
 
@@ -152,7 +120,7 @@ button:hover::before {
 @media (max-width: 768px){
   body { padding: 20px 10px; }
   .container { padding: 20px 15px; }
-  h1 { font-size: 1.5rem; }
+  h1 { font-size: 1.6rem; }
   button { width: 100%; padding: 12px; font-size: 0.95rem; }
-  .correct-text { font-size: 0.95rem; padding: 12px; }
+  .correct-text { font-size: 0.95rem; padding: 10px; }
 }
