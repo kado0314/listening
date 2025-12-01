@@ -158,3 +158,25 @@ button:hover::before {
   button { width: 100%; padding: 12px; font-size: 0.95rem; }
   .correct-text { font-size: 0.95rem; padding: 12px; }
 }
+
+/* 左上 戻るボタン */
+#backBtn {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: #ffffff;
+    color: #3f51b5;
+    border: 2px solid #3f51b5;
+    padding: 6px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, color 0.2s;
+    z-index: 1000;
+}
+
+#backBtn:hover {
+    background-color: #3f51b5;
+    color: #ffffff;
+}
